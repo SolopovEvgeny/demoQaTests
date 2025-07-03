@@ -36,11 +36,18 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
-    </dependencies>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version> <!-- Последняя версия на момент написания -->
+            <scope>provided</scope>
+        </dependency>
+            </dependencies>
 
-    <build>
-        <plugins>
-            <!-- Maven Surefire Plugin (для запуска TestNG) -->
+            <build>
+                <plugins>
+                    <!-- Maven Surefire Plugin (для запуска TestNG) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
